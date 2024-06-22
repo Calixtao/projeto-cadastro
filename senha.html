@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calixto</title>
+
+    <style>
+
+#icon{
+    position: absolute;
+    top: 40%;
+    right: 20px;
+    transform: translate(-50%,);
+    background: url(imagens/olho1.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icon.hide{
+    background: url(imagens/olho2.png);
+    background-size: cover;
+}
+
+#icon2{
+    position: absolute;
+    top: 65%;
+    right: 20px;
+    transform: translate(-50%,);
+    background: url(imagens/olho1.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#icon2.hide{
+    background: url(imagens/olho2.png);
+    background-size: cover;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <section id="logo">
+            <img src="imagens/LOGO.png" alt="Logo">
+        </section>
+
+        <section id="form">
+            <h1 style="font-size: 44px;">Nova Senha</h1>
+            <p>Esqueceu a senha, não se preucupe!</p>
+            <form action="calixto.php" method="post" autocomplete="on">
+                <p>
+                    <label for="password">Nova Senha</label>
+                    <br>
+                    <input type="password" name="password" id="password" required minlength="8" placeholder="************">
+                </p>
+                <div id="icon" onclick="showHide()"></div>
+                <p>
+                    <label for="password">Repita a Senha</label>
+                    <br>
+                    <input type="password" name="password" id="password" required minlength="8" placeholder="************">
+                </p>
+                <div id="icon2" onclick="showHide()"></div>
+                
+                <div id="senha">
+                    <label for="senha"></label>
+                    <input type="submit" value="Atualizar Senha" id="entrar" name="senha">
+                </div>
+            </form>
+        </section>
+
+        <section id="forgot">
+            <a href="#">
+                <p>Login !</p>
+            </a>
+            <a href="cadastro.html">
+                <p>Cadastrar-se !</p>
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
