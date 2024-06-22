@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css">
+    <title>Calixto</title>
+</head>
+<body>
+    <main>
+        <section id="logo">
+            <img src="imagens/LOGO.png" alt="Logo">
+        </section>
+
+        <section id="title">
+            <h1>Crie uma nova conta</h1>
+            <a href="index.html">
+                <p>Já tem uma conta ? Entre aqui !</p>
+            </a>
+        </section>
+
+        <section id="form">
+            <form action="calixto.php" method="post" autocomplete="on">
+                <p>
+                    <label for="name">Nome</label>
+                    <br>
+                    <input type="text" name="name" id="name" required minlength="3" placeholder="Jorge Silva">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="email" id="email" required placeholder="jorge@email.com.br">
+                </p>
+                <p>
+                    <label for="password">Senha</label>
+                    <br>
+                    <input type="password" name="password" id="password" required minlength="8" placeholder="************">
+                </p>
+                <div id="icon" onclick="showHide()"></div>
+                
+                <div id="signup">
+                    <label for="cadastrar"></label>
+                    <input type="submit" value="Inscreva-se" id="entrar" name="cadastrar">
+                </div>
+            </form>
+        </section>
+
+        <section id="forgot">
+            <a href="index.html">
+                <p>Já tem uma conta ?</p>
+            </a>
+            <a href="index.html">
+                <p>Entrar !</p>
+            </a>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

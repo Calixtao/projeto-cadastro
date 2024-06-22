@@ -16,23 +16,33 @@
         <section id="form">
             <h1>Login</h1>
             <p>Entre para continuar.</p>
-            <form action="calixto.php" method="get" autocomplete="on">
+            <form action="calixto.php" method="post" autocomplete="on">
                 <p>
                     <label for="name">Nome</label>
                     <br>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required minlength="3">
                 </p>
-            </form>
-            <form action="calixto.php" method="post" autocomplete="off">
                 <p>
                     <label for="password">Senha</label>
                     <br>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required minlength="8">
                 </p>
                 <div id="icon" onclick="showHide()"></div>
-                <input type="submit" value="Entrar" id="entrar">
+                
+                <div id="submit">
+                    <label for="entrar"></label>
+                    <input type="submit" value="Entrar" id="entrar" name="entrar">
+                </div>
             </form>
+        </section>
 
+        <section id="forgot">
+            <a href="#">
+                <p>Esqueceu a senha ?</p>
+            </a>
+            <a href="cadastro.html">
+                <p>Cadastre-se !</p>
+            </a>
         </section>
     </main>
 

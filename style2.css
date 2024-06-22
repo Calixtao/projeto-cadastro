@@ -15,6 +15,13 @@ main{
     border-radius: 15px;
 }
 
+section#title{
+    text-align: center;
+    width: 250px;
+    position: relative;
+    left: 13%;
+}
+
 section#logo > img{
     display: flex;
     width: 60px;
@@ -24,19 +31,38 @@ section#logo > img{
     border-radius: 15px;
 }
 
+section#title > h1{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Courier, monospace;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+section#title > a{
+    text-decoration: none;
+}
+
+section#title > a > p{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+section#title > a > p:hover{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
 section#form{
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 65%;
     left: 50%;
     transform: translate(-50%,-50%);
-}
-
-section#form > h1{
-    color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Courier, monospace;
-    font-size: 50px;
-    margin-bottom: 5px;
 }
 
 section#form > p{
@@ -67,7 +93,7 @@ section#form > form > p >  input {
 
 #icon{
     position: absolute;
-    top: 66%;
+    top: 65%;
     right: 20px;
     transform: translate(-50%,);
     background: url(imagens/olho1.png);
@@ -89,7 +115,7 @@ section#form > form > p >  input {
     text-align: center;
     border-radius: 5px;
     border: 1px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: -20px;
     background-color: #FEB06A;
     font-weight: bolder;
@@ -100,7 +126,7 @@ section#form > form > p >  input {
 section#forgot{
 position: relative;
 display: flexbox;
-top: 330px;
+top: 270px;
 }
 
 section#forgot > a{
